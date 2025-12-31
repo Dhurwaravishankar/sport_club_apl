@@ -101,7 +101,7 @@ const AdminLogin = () => {
                   type="email"
                   value={formData.email}
                   onChange={handleChange}
-                  placeholder="admin@awapalli.com"
+                  placeholder="a......@com"
                   className="pl-11"
                 />
               </div>
@@ -138,10 +138,10 @@ const AdminLogin = () => {
           <div className="mt-6 p-4 bg-muted/50 rounded-lg">
             <p className="text-xs text-muted-foreground text-center mb-2">Demo Credentials:</p>
             <p className="text-xs text-center text-foreground">
-              Email: <span className="text-primary">admin@awapalli.com</span>
+              Email: <span className="text-primary">ad.....@.com</span>
             </p>
             <p className="text-xs text-center text-foreground">
-              Password: <span className="text-primary">admin123</span>
+              Password: <span className="text-primary">a123@&</span>
             </p>
           </div>
         </form>
