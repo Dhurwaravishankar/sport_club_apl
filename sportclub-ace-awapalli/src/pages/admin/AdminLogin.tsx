@@ -101,7 +101,7 @@ const AdminLogin = () => {
                   type="email"
                   value={formData.email}
                   onChange={handleChange}
-                  placeholder="a......@com"
+                  placeholder=" "
                   className="pl-11"
                 />
               </div>
@@ -117,7 +117,7 @@ const AdminLogin = () => {
                   type="password"
                   value={formData.password}
                   onChange={handleChange}
-                  placeholder="••••••••"
+                  placeholder=" "
                   className="pl-11"
                 />
               </div>
