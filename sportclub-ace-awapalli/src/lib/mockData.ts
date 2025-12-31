@@ -1,0 +1,123 @@
+import { Match, Registration, AdminStats } from '@/types';
+
+export const mockMatches: Match[] = [
+  {
+    id: '1',
+    name: 'Summer Football Championship',
+    sport: 'Football',
+    date: '2025-01-15',
+    time: '10:00 AM',
+    location: 'Awapalli Sports Ground',
+    prize: '₹50,000',
+    paidFree: 'paid',
+    registrationStatus: 'open',
+  },
+  {
+    id: '2',
+    name: 'Cricket Premier League',
+    sport: 'Cricket',
+    date: '2025-01-20',
+    time: '09:00 AM',
+    location: 'Central Cricket Stadium',
+    prize: '₹75,000',
+    paidFree: 'paid',
+    registrationStatus: 'open',
+  },
+  {
+    id: '3',
+    name: 'Volleyball Open Tournament',
+    sport: 'Volleyball',
+    date: '2025-01-25',
+    time: '02:00 PM',
+    location: 'Indoor Sports Complex',
+    prize: '₹25,000',
+    paidFree: 'free',
+    registrationStatus: 'open',
+  },
+  {
+    id: '4',
+    name: 'Badminton Singles Championship',
+    sport: 'Badminton',
+    date: '2025-02-01',
+    time: '11:00 AM',
+    location: 'Awapalli Indoor Arena',
+    prize: '₹15,000',
+    paidFree: 'free',
+    registrationStatus: 'open',
+  },
+  {
+    id: '5',
+    name: 'Basketball 3v3 Tournament',
+    sport: 'Basketball',
+    date: '2025-02-10',
+    time: '04:00 PM',
+    location: 'City Basketball Court',
+    prize: '₹30,000',
+    paidFree: 'paid',
+    registrationStatus: 'closed',
+  },
+];
+
+export const mockRegistrations: Registration[] = [
+  {
+    id: '1',
+    matchId: '1',
+    matchName: 'Summer Football Championship',
+    teamName: 'Thunder FC',
+    captainName: 'Rahul Sharma',
+    contact: '9876543210',
+    sport: 'Football',
+    players: [
+      { id: '1', name: 'Rahul Sharma' },
+      { id: '2', name: 'Amit Patel' },
+      { id: '3', name: 'Vikram Singh' },
+      { id: '4', name: 'Rohan Das' },
+      { id: '5', name: 'Suresh Kumar' },
+    ],
+    screenshotUrl: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400',
+    paymentStatus: 'pending',
+    createdAt: '2025-01-02',
+  },
+  {
+    id: '2',
+    matchId: '2',
+    matchName: 'Cricket Premier League',
+    teamName: 'Royal Strikers',
+    captainName: 'Priya Verma',
+    contact: '9876543211',
+    sport: 'Cricket',
+    players: [
+      { id: '1', name: 'Priya Verma' },
+      { id: '2', name: 'Anita Roy' },
+      { id: '3', name: 'Meera Nair' },
+    ],
+    screenshotUrl: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400',
+    paymentStatus: 'approved',
+    createdAt: '2025-01-03',
+  },
+  {
+    id: '3',
+    matchId: '3',
+    matchName: 'Volleyball Open Tournament',
+    teamName: 'Spike Masters',
+    captainName: 'Arjun Reddy',
+    contact: '9876543212',
+    sport: 'Volleyball',
+    players: [
+      { id: '1', name: 'Arjun Reddy' },
+      { id: '2', name: 'Kiran Rao' },
+      { id: '3', name: 'Sanjay Gupta' },
+    ],
+    paymentStatus: 'approved',
+    createdAt: '2025-01-04',
+  },
+];
+
+export const mockStats: AdminStats = {
+  totalMatches: 5,
+  totalRegistrations: 12,
+  pendingPayments: 4,
+  approvedTeams: 8,
+};
+
+export const mockQrCodeUrl = 'https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=upi://pay?pa=sportclub@upi&pn=Sport%20Club%20Awapalli&am=500';
